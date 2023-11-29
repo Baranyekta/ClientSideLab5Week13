@@ -20,7 +20,7 @@ function updateBatteryStatus(battery) {
     if (battery.charging === true) {
         chargeStatus.textContent = "Charging...";
     } else {
-        chargeStatus.textContent = "Discharging...";
+        chargeStatus.textContent = "Not Charging...";
     }
     // STEP 3c: Update the charge level
     chargeLevel.textContent = (battery.level * 100) + "%";
